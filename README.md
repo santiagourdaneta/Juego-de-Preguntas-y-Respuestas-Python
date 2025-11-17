@@ -1,53 +1,50 @@
+# 🧠 QuizMaster: Tu Reto de Conocimientos en Consola (Python)
 
-QuizMaster es un sencillo y adictivo juego de preguntas y respuestas desarrollado en Python para ser ejecutado directamente en la consola. Pon a prueba tus conocimientos generales a través de múltiples preguntas con opciones de respuesta, obtén feedback instantáneo y descubre tu puntuación final al terminar el quiz.  Ideal para practicar Python o para un rápido desafío mental.
+**QuizMaster** es un sencillo pero adictivo juego de preguntas y respuestas desarrollado enteramente en **Python** para ser ejecutado directamente en la consola (CLI). Este proyecto se enfoca en la implementación de una **lógica de juego interactiva** y **modular**, ideal para entender los flujos de control (`if/else`, `while`), la gestión de estructuras de datos (`listas` y `diccionarios`), y la interacción con el usuario a través de la entrada estándar.
 
-# QuizMaster: Tu Reto de Conocimientos en Consola
+## ✨ Características Funcionales
 
-## 🚀 Descripción del Proyecto
+* **Juego Interactivo:** Ciclo de preguntas y respuestas gestionado completamente en la consola.
+* **Múltiples Opciones:** Cada pregunta presenta opciones para una experiencia de usuario dirigida.
+* **Feedback Instantáneo:** El usuario recibe una confirmación inmediata si la respuesta es correcta o incorrecta.
+* **Sistema de Puntuación:** Se mantiene un contador de aciertos y se presenta una puntuación final, incluyendo el porcentaje de éxito.
+* **Estructura de Datos Clara:** Las preguntas y opciones se manejan de manera organizada mediante una lista de diccionarios, facilitando la expansión del contenido.
 
-**QuizMaster** es una aplicación de juego de preguntas y respuestas (quiz) desarrollada en **Python** que se ejecuta directamente en tu terminal. Diseñado para ser simple y funcional, este proyecto te permite poner a prueba tus conocimientos sobre diversos temas, recibir feedback instantáneo sobre tus respuestas y ver tu puntuación final. Es una excelente manera de practicar programación en Python y entender la lógica básica de un juego interactivo.
+## 🛠️ Tecnología Principal
 
-## ✨ Características
+| Componente | Tecnología | Propósito |
+| :--- | :--- | :--- |
+| **Lenguaje Base** | **Python 3.x** | Lenguaje de programación principal. |
+| **Interfaz** | **CLI (Consola/Terminal)** | Interacción de entrada/salida a través de la terminal. |
+| **Estructuras** | **Listas y Diccionarios** | Modelado de datos para preguntas, opciones y respuestas correctas. |
 
-* **Múltiples Preguntas:** Un conjunto predefinido de preguntas para desafiarte.
-* **Opciones Múltiples:** Cada pregunta presenta varias opciones de respuesta.
-* **Feedback Instantáneo:** Descubre si tu respuesta es correcta o incorrecta al momento.
-* **Puntuación Final:** Obtén tu resultado al finalizar el quiz, incluyendo el porcentaje de aciertos.
-* **Interfaz de Consola Sencilla:** Fácil de usar y ejecutar sin dependencias complejas.
+## 🚀 Instalación y Ejecución
 
-## 🛠️ Tecnologías Utilizadas
+Dado que el proyecto utiliza solo la librería estándar de Python, no se requieren dependencias externas.
 
-* **Python 3.x**
+### Prerrequisitos
 
-## 🚀 Cómo Ejecutar el Proyecto
+* **Python 3.x** instalado en tu sistema.
 
-Sigue estos sencillos pasos para poner en marcha QuizMaster en tu máquina:
+### Pasos de Ejecución
 
-1.  **Clona este repositorio** (o descarga el archivo `main.py` directamente).
-   
-    git clone https://github.com/santiagourdaneta/Juego-de-Preguntas-y-Respuestas-Quiz-App---Python-Consola-/ 
-   
-2.  **Navega a la carpeta del proyecto** en tu terminal.
-    
-    cd Juego-de-Preguntas-y-Respuestas-Quiz-App---Python-Consola-/
+1.  **Clonar el Repositorio:**
+    ```bash
+    git clone [https://github.com/santiagourdaneta/Juego-de-Preguntas-y-Respuestas-Python.git](https://github.com/santiagourdaneta/Juego-de-Preguntas-y-Respuestas-Python.git)
+    cd Juego-de-Preguntas-y-Respuestas-Python
+    ```
 
-3.  **Ejecuta el script de Python:**
-    
+2.  **Ejecutar el Script:**
+    Ejecuta el archivo principal usando el intérprete de Python:
+    ```bash
     python main.py
+    ```
 
-4.  ¡Sigue las instrucciones en la consola para jugar!
+3.  **Jugar:**
+    Sigue las instrucciones en la consola para seleccionar tus respuestas y ver tu puntuación final.
 
-## 💡 Personalización
+## 💡 Extensibilidad
 
-Puedes personalizar fácilmente las preguntas y respuestas editando la lista `quiz_questions` dentro del archivo `main.py`.
+La lógica del juego está separada del contenido. Para añadir nuevas preguntas o modificar las existentes, simplemente edita la estructura de datos 
 
-quiz_questions = [
-    {
-        'question': "¿Cuál es la capital de Perú?",
-        'options': ["Arequipa", "Cusco", "Lima", "Trujillo"],
-        'answer_index': 2 # Lima es la tercera opción, índice 2 (0-basado)
-    },
-    # Añade o modifica más preguntas aquí
-]
-
-
+`quiz_questions` en `main.py`, manteniendo el formato `{'question': '...', 'options': [...], 'answer_index': ...}`.
