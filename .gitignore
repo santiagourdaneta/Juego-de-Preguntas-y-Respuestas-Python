@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entorno Virtual
+/venv
+/.venv
+
+# Logs y Archivos de Configuracion
+*.log
+.DS_Store
